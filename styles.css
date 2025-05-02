@@ -34,7 +34,7 @@ body {
     overflow: hidden;
     padding-bottom: 10px;
 }
-/* .post-icons{
+.post-icons{
     width: 320px;
     display: flex;
     justify-content:flex-start;
@@ -46,25 +46,9 @@ body {
     justify-content: flex-end;
     align-items: flex-end;
 
-} */
-
-.post-icons {
-    width: 320px;
-    display: flex;
-    padding: 15px;
 }
 
-/* Los primeros 3 hijos se alinean a la izquierda (por defecto en flex) */
-.post-icons > div:nth-child(1),
-.post-icons > div:nth-child(2),
-.post-icons > div:nth-child(3) {
-    margin-right: 10px; /* Empuja el cuarto hijo a la derecha */
-}
 
-/* El cuarto hijo se alinea a la derecha */
-.post-icons > div:nth-child(4) {
-    margin-left: auto; /* Lo coloca en el extremo derecho */
-}
 
 .post-body{
     width: 320px;
