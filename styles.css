@@ -1,3 +1,14 @@
+
+roboto-serif-font {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+    font-style: normal;
+    font-variation-settings:
+      "wdth" 100,
+      "GRAD" 0;
+  }
+
 html{
     background-color: black;
 }
@@ -5,6 +16,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "roboto Serif";
 }
 .post{
     display: flex;
@@ -17,53 +29,45 @@ body {
 }
 
 .post-header{
-    width: 330px;
-    padding: 10px;
+    width: 330px;  
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }  
+.post-header p {
+    font-size: 12px;
+}
 .post-heder-icons{
     display: flex;
-    justify-content: space-between;
-    padding-top: 8px;
+    align-items: center;
+    margin: 3px;
 }
-
 
 .post-img{
     width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: stretch;
-    overflow: hidden;
     padding-bottom: 10px;
+}
+img {
+    width: 100%;
 }
 .post-icons{
     width: 320px;
     display: flex;
     padding: 10px;
     margin-top: 10px;
+    justify-content: space-between;
 }
 .post-icons > div:nth-child(-n + 3){
     justify-content:flex-start;
-    align-items: flex-start;
+    align-content: flex-start;
 }
-.post-icons > div:last-child() {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-}
-/* .post-icons-child{
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    padding: 15px;
-} */
-
-
-
 .post-body{
     width: 320px;
     display: flex;
     flex-direction: column;
- 
+    font-size: 12px;
     padding: 10px;
     margin-top: 0;
     margin-bottom: 0;
